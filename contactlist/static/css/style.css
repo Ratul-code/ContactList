@@ -1,0 +1,91 @@
+body{
+  margin: 0px;
+  
+}
+.container {
+  margin: 0px auto;
+  max-width: 428px;
+  background-color:#313438;
+  min-height: 100vh;
+  
+}
+header {
+  background: rgb(29, 88, 1);
+  background: rgb(3, 117, 73);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 117, 73, 1) 0%,
+    rgba(177, 207, 51, 1) 100%
+  );
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0;
+  align-items: center;
+}
+.contact-search{
+    border-radius: 100px;
+    padding: .3em;
+    font-size: 1.2em;
+    border:1px solid #fff;
+    outline: none;
+
+}
+i{
+    font-size: 1.2em;
+}
+.name{
+    font-size: 1.2em;
+}
+ul{
+    padding: 0;
+    margin:0;
+    width: 100%;
+}
+hr{
+    border: 1px solid #48494a;
+}
+.list{
+    list-style: none;
+}
+.relationship{
+    padding: .4em .5em;
+    border-radius: 100px;
+    border-top-left-radius:0px;
+    background-color:#75a85e;
+    width:6em;
+    text-align: center;
+    font-size: .8em;
+
+}
+.contact-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    transition: 0.5s;
+    color:#fff;
+}
+.contact-list:hover{
+    background-color: #48494a;
+}
+.text{
+    padding: .7em;
+}
+.text:hover{
+    background-color: #313438;
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.ic{
+    padding: .6em;
+}
+.ic:hover{
+    border-radius: 50%;
+    background-color: rgba(78, 75, 75, 0.418);
+}
+li{
+    text-decoration: none;
+}

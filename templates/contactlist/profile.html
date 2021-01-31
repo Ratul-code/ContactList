@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="{% static 'css/profile.css' %}" />
+
+<body>
+    <div class="container">
+        <header class="top">
+            <a href="/"><i class="fas fa-arrow-left ic"></i></a>
+            <div class="hero">
+                <h1 class="name">{{contact.name}}</h1><br>
+                <p class="relationship">{{contact.relation}}</p>
+            </div>
+
+        </header>
+        <section class="contact-info">
+            <div class="info">
+                <a href="editcontact/{{contact.id}}"><i class="fas fa-phone text icon-gradient"></i></a>
+                <p>{{contact.phone_no}}</p>
+            </div>
+            <div class="info">
+                <a href="editcontact/{{contact.id}}"><i class="far fa-envelope icon-gradient"></i></a>
+                <p>{{contact.email}}</p>
+            </div>
+            <div class="info">
+                <a href="editcontact/{{contact.id}}"><i id="location" class="fas fa-map-marker-alt icon-gradient"></i></a>
+                <p>{{contact.address}}</p>
+            </div>
+        </section>
+        <section class="btn">
+            <a href="editcontact/{{contact.id}}">
+                <i class="far fa-edit editbutton icon-gradient"></i>
+            </a>
+        </section>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f9d8569fc5.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

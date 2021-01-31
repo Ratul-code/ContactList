@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+<body>
+    <div class="container">
+        <header class="top">
+            <form action="#">
+                <input type="search" class="contact-search" name="search-area" placeholder="Search" />
+            </form>
+            <a href="addcontact"><i class="fas fa-user-plus ic"></i></a>
+
+        </header>
+        <section>
+            <ul class="list">
+                {% for contact in contacts reversed %}
+                <a href="profile/{{contact.id}}">
+                    <div class="contact-list">
+                        <li class="list-item">
+                            <h3 class="name">{{contact.name}}</h3>
+                            <p class="relationship">{{contact.relation}}</p>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"><i class="fas fa-phone text"></i></a>
+                            <a href="#"></a><i class="fas fa-sms text"></i>
+                        </li>
+                    </div>
+                </a>
+                <hr>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f9d8569fc5.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
